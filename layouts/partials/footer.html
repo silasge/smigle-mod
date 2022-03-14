@@ -1,0 +1,23 @@
+<footer>
+  <hr />
+  {{ if .Site.Params.social }}
+    <p id="social">
+      Onde me encontrar:
+      <br />
+      {{ range $i, $e := .Site.Params.social }}
+        {{ if $i }} | {{ end }}
+        <a href="{{ .url }}">{{ .name }}</a>
+      {{ end }}
+    </p>
+  {{ end }}
+  <p class="copyright">
+    Copyright © {{ now.Format "2006"}}
+    <a href="{{ .Site.BaseURL }}"><strong>{{ default "Blog Author" .Site.Params.Author }}</strong></a>.
+  </p>
+  <p class="builtWith">
+    Criado com
+    <a href="http://www.gohugo.io/">Hugo</a>
+    usando o tema
+    <a href="https://gitlab.com/ian-s-mcb/smigle-hugo-theme">smigle</a>.
+  </p>
+</footer>
