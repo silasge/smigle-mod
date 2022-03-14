@@ -22,7 +22,7 @@ https://smigle-hugo-theme.netlify.app/
 
 From the root of your site:
 ```bash
-git submodule add https://gitlab.com/ian-s-mcb/smigle-hugo-theme.git themes/smigle
+git submodule add git@github.com:silasge/smigle-mod.git themes/smigle
 ```
 
 ### Updating
@@ -38,7 +38,7 @@ git submodule foreach git pull origin main
 hugo new site mysite -f yaml
 cd mysite
 git init
-git submodule add https://gitlab.com/ian-s-mcb/smigle-hugo-theme themes/smigle
+git submodule add git@github.com:silasge/smigle-mod.git themes/smigle
 cd themes/smigle/exampleSite
 hugo server
 ```
